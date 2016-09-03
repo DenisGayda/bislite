@@ -9,7 +9,7 @@ body {
 		position: relative;
 	}
 
-		.Bwrappers:after {
+		.clearfix:after {
 			content: "";
 			display: block;
 			clear: both;
@@ -259,40 +259,69 @@ span {
 		max-width: 1000px;
 		margin: 0 auto;
 		position: relative;
-		padding: 15px 0;
+		padding: 28px 0 18px 0;
+		border-bottom: 1px solid #d3d3d3;
 	}
 
 		.latest ul {
 			float: right;
+			margin: 0;
 		}
 
 			.latest li {
 			display: inline-block;
-			height: 15px;
-			width: 15px;
+			height: 20px;
+			width: 20px;
 			background-color: #2aacc8;
 			border-radius: 50%;
 			font-weight: 700;
-			margin: 5px; 
+			margin: 0 5px; 
 			text-align: center;
+			position: relative;
+			cursor: pointer;
+			vertical-align: bottom;
 			}
-			.latest h6:before {
-				content: "";
+			.arrow_left::before,
+			.arrow_right::before {
+				position: absolute;
+				width: 7px;
+				height: 10px;
 				display: inline-block;
-				width: 50px;
-				height: 20px;
-				background-image: url(img/pointer.png);
-				background-repeat: no-repeat;
-				clear: both;
-				}
+				top:1px;
+				
+			}
+			.arrow_left::before {
+				content: url(img/arrowL.png);
+				left: 5px;
+			}
+			.arrow_right::before {
+				content: url(img/arrowR.png);
+				right: 5px;
+			}
 
 			.latest h6 {
-				width: 200px;
-				display: inline;
+				display: inline-block;
+				float: left;
+				margin: 0;
+				padding-left: 40px;
+				position: relative;
+				font-size: 15px;
+				line-height: 20px;
+			}
+			.latest h6::before {
+				content: url(img/pointer.png);
+				position: absolute;
+				width: 14px;
+				height: 24px;
+				display: inline-block;
+				top: -4px;
+				left: 3px;
 			}
 
 		.pic {
 			text-align: center;
+			padding: 20px 0 40px 0;
+			border-bottom: 1px solid #d3d3d3;
 		}
 
 		.gallery {
@@ -301,6 +330,7 @@ span {
 		}
 			.gallery img {
 				width: 100%;
+				vertical-align: bottom;
 			}
 
 	.other {
@@ -318,27 +348,22 @@ span {
 		height: 50%;
 	}
 	.other a {
-		vertical-align: middle;
+		margin-top: 30px;
+		display: inline-block;
 	}
-	
-		.other a:before {
-			content: "";
-			display: inline-block;
-			width: 40px;
-			height: 40px;
-			background-repeat: no-repeat;	
-			background-position: bottom;
-		}
-		
-			.other a:first-child:before {
-				background-image: url(img/eye.png);
-				vertical-align: middle;
-			}
 
-			.other a:last-child:before {
-				background-image: url(img/chain.png);
-				vertical-align: middle;
-			}
+	.other a:first-child {
+		background-image: url(img/eye.png);
+		width: 35px;
+		height: 25px;
+		margin-right: 35px;
+	}
+
+	.other a:last-child {
+		background-image: url(img/chain.png);
+		width: 20px;
+		height: 25px;
+	}
 
 hr {
 	color: lightgray;
