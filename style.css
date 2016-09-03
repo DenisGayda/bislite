@@ -21,7 +21,7 @@ body {
 		float: right;
 		font-size: 30px;
 	}
-		.nav li {
+		.nav>li {
 			display: inline-block;
 			font-size: 13px;
 			margin-left: 10px; 
@@ -29,14 +29,12 @@ body {
 			line-height: 20px;
 		}
 			.nav li a {
-				display: block;
+				display: inline-block;
 				color: black;
 				text-decoration: none;
-				padding: 20px 10px;
+				padding: 5px 10px;
 			}
-			.nav li a:hover {
-				padding-top: 5px;
-				padding-bottom: 5px;
+			.nav>li:hover {
 				border-top: 3px solid #2aacc8;
 				color: #2aacc8;
 				background-color: white;
@@ -49,20 +47,26 @@ body {
 			display: none;
 		    position: absolute;
 		    width: 200px;
-		    top: 30px;
+		    top: 28px;
 		    left: inherit;
 		    font-size: 13px;
 		    font-weight: 700;
 			line-height: 20px;
 		    background-color: white;
+		    padding: 0 28px 0 17px;
 		   }
 
-					ul.subnav > li {
+					ul.subnav li {
 					    display: block;
 					    border-bottom: 1px solid lightgray;
 					}
-
-					ul.subnav > li .smiley {
+					ul.subnav li:last-child {
+					    border-bottom: none;
+					}
+					.profile {
+						padding: 8px 0 8px 0;
+					}
+					ul.subnav li .smiley {
 					    border-radius: 1em;
 					-webkit-box-shadow: 0 0 0 .4em #2C2C2C, inset 0 0 0 .1em #2C2C2C;
 					box-shadow: 0 0 0 .4em #2C2C2C, inset 0 0 0 .1em #2C2C2C;
@@ -70,6 +74,8 @@ body {
 					position: relative;
 					width: 2em;
 					margin-top: 0.3em;
+					display: inline-block;
+					vertical-align: middle;
 					}
 					 
 					.smiley::after, .smiley::before {
@@ -105,7 +111,6 @@ body {
 					ul.subnav > li > a:hover {
 					    border-top: none;
 					    color:  #2aacc8;
-					    padding: 10px;
 					}
 
 						ul.nav > li:hover > ul.subnav {
