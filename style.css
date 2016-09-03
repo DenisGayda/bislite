@@ -145,22 +145,22 @@ span {
 	.foil {
 		background-color: #81e4ed;
 		padding-top: 20px;
-		padding-bottom: 20px;
 		height: 100%;
 	}
-			.foil img  {
-				background-color: #dd5835;
-				display: block;
+			.foil .bg  {
+				background: #dd5835 url(img/wrappers.png) no-repeat center right;
 				margin: 0 auto;
 				max-width: 1000px;
+				height: 440px;
 			}
 			.foil ul {
 				text-align: center;
+				margin: 0;
 			}
 
 			.foil li {
 				display: inline-block;
-				margin: 20px 10px 0;
+				margin: 12px 9px;
 			}
 
 			.foil a {
@@ -169,6 +169,7 @@ span {
 			width: 15px;
 			background-color: gray;
 			border-radius: 50%;
+			vertical-align: middle;
 			}
 
 			.foil a:hover {
