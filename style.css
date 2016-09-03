@@ -471,12 +471,14 @@ span {
 footer {
 	text-align: justify;
 }
-
+footer ul {
+	list-style: none;
+	padding: 0;
+}
 	footer > div {
 		display: inline-block;
 		width: 14%;
 		vertical-align: top;
-		padding: 30px 0;
 	}
 
 		footer > div:first-child {
@@ -508,12 +510,17 @@ footer {
 		font-weight: 400;
 		line-height: 20px;
 		text-align: left;
+		margin: 0;
 	}
 
 	footer > div .end {
 		margin-top: 25px;
 	}
-
+	footer .strong {
+		color: #363636;
+		font-size: 14px;
+		font-weight: 700;
+	}
 	footer > div > ul > li > a {
 		line-height: 26px;
 		text-decoration: none;
@@ -539,14 +546,12 @@ footer {
 		line-height: 20px;
 		text-align: left;
 		float: left;
+		margin: 0;
 	}
 
 	.finish a {
 		color: #363636;
 	}
-
-	.finish:after {
-		content: "";
-		display: inline-block;
-		clear: both;
-	}
+	.finish .logotype {
+		line-height: 50px;
+	} 
