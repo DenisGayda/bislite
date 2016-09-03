@@ -301,7 +301,6 @@ span {
 
 			.latest h6 {
 				display: inline-block;
-				float: left;
 				margin: 0;
 				padding-left: 40px;
 				position: relative;
@@ -365,12 +364,7 @@ span {
 		height: 25px;
 	}
 
-hr {
-	color: lightgray;
-	max-width: 1000px;
-	margin-bottom: 10px;
-	}
-	
+
 	.person {
 		display: inline-block;
 		max-width: 49%;
@@ -393,7 +387,6 @@ hr {
 				height: 20px;
 				background-image: url(img/comments.png);
 				background-repeat: no-repeat;
-				clear: both;
 		}
 			.clientsicon h6:before {
 				content: "";
@@ -402,7 +395,6 @@ hr {
 				height: 20px;
 				background-image: url(img/clients.png);
 				background-repeat: no-repeat;
-				clear: both;
 			}
 
 		.person p {
@@ -437,8 +429,8 @@ hr {
 			font-weight: 400;
 			line-height: 26px;
 			display: inline-block;
-			padding: 30px;
-
+			padding: 37px 82px 35px 31px;
+			margin: 0;
 		}
 
 		.download b {
@@ -451,7 +443,7 @@ hr {
 			padding: 0px;
 			width: 240px;
 			height: 60px;
-			vertical-align: middle;
+			vertical-align: text-bottom;
 			background-color: #2aacc8;
 			background-image: linear-gradient(to top, #2aacc8 0%, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
 			border: 1px solid #2aacc8;
